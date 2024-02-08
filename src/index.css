@@ -1,0 +1,142 @@
+*{
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+
+/* Navbar Design */
+
+#navbar{
+  width: 100%;
+  height: 9rem;
+  background-color: rgba(139, 164, 164, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar{
+  width: 95%;
+  height: 100%;
+  background-color: rgb(113, 46, 69);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar h3{
+  font-size: 4rem;
+  color: white;
+}
+
+
+/* Main Design */
+
+#main{
+  width: 100%;
+  height: 87.6vh;
+  background-color: rgba(139, 164, 164, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counterBox{
+  width: 50%;
+  height: 60%;
+  background-color: rgb(113, 46, 69);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.topCounter{
+  width: 70%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counterValue{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(199, 74, 118, 0.228);
+  border-radius: 50%;
+}
+.counterValue:hover{
+  box-shadow: 0rem 0rem 1rem black;
+}
+.counterValue h3{
+  font-size: 9rem;
+  color: white;
+}
+.bottomCounter{
+  width: 80%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counterBtn{
+  width: 80%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn{
+  width: 30%;
+  height: 40%;
+  border: none;
+  font-size: 1.5rem;
+}
+.btn:first-child{
+  background-color: green;
+  color: white;
+}
+.btn:nth-child(2){
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
+.btn:nth-child(3){
+  background-color: red;
+  color: white;
+}
+.btn:first-child:hover{
+  box-shadow: 0rem .5rem 1rem black;
+  background-color: rgb(4, 115, 4);
+  cursor: pointer;
+}
+.btn:nth-child(2):hover{
+  box-shadow: 0rem .5rem 1rem black;
+  background-color: rgba(241, 241, 14, 0.811);
+  cursor: pointer;
+}
+.btn:nth-child(3):hover{
+  box-shadow: 0rem .5rem 1rem black;
+  background-color: rgba(193, 33, 33, 0.655);
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width : 768px) {
+  html{
+    font-size: 40%;
+  }
+  #main{
+    height: 92vh;
+  }
+  .counterBox{
+    width: 80%;
+    height: 50%;
+  }
+  .counterValue{
+    width: 50%;
+    height: 80%;
+  }
+}
